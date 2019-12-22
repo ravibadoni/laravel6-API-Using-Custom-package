@@ -1,0 +1,48 @@
+{
+  "name": "qnectu/qauth",
+  "description": "A qauth",
+  "license": "MIT",
+  "keywords": [
+    "qauth"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "illuminate/support": "^6.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0",
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "qnectu\\Qauth\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "qnectu\\Qauth\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "qnectu\\Qauth\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

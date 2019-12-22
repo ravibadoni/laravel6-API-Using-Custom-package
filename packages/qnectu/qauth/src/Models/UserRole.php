@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace qnectu\Qauth\models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -19,14 +19,5 @@ class UserRole extends Authenticatable
     protected $fillable = [
         'name'
     ];
-
-    /**
-     * Many-to-Many relations with User.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-     */
-    public function users() {
-        return $this->belongsToMany('App\User');
-    }
 
 }
